@@ -1,0 +1,30 @@
+---- Minecraft Crash Report ----
+// Who set us up the TNT?
+
+Time: 2026-09-30 21:14:02
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.class_1297.method_5864()" because "target" is null
+	at com.example.coolmobs.entity.ShadowStalker.tickMovement(ShadowStalker.java:212)
+	at net.minecraft.class_1309.method_5773(class_1309.java:2774)
+	at net.minecraft.class_1308.handler$zbc000$coolmobs$onTick(class_1308.java:9123)
+	at net.minecraft.class_3218.method_18762(class_3218.java:778)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Entity being ticked --
+Details:
+	Entity Type: coolmobs:shadow_stalker (com.example.coolmobs.entity.ShadowStalker)
+	Entity's Exact location: 104.50, 64.00, -33.12
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Java Version: 21.0.4, Eclipse Adoptium
+	Fabric Mods: 
+		coolmobs: Cool Mobs 2.1.0
+		fabric-api: Fabric API 0.116.0+1.21.1
+		sodium: Sodium 0.6.0+mc1.21.1
+

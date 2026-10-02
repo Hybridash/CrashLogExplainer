@@ -1,0 +1,3 @@
+Missing or unsupported mandatory dependencies:
+	Mod ID: 'geckolib', Requested by: 'alexsmobs', Expected range: '[4.4,)', Actual version: '[MISSING]'
+Suspected Mods: NONE

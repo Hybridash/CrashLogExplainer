@@ -1,0 +1,5 @@
+[main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+Java is version 17.0.8, using 64-bit architecture
+Exception in thread "main" java.lang.UnsupportedClassVersionError: net/minecraft/client/main/Main has been compiled by a more recent version of the Java Runtime (class file version 65.0), this version of the Java Runtime only recognizes class file versions up to 61.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+Process exited with code 1.

@@ -1,0 +1,4 @@
+[main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[Render thread/ERROR]: Reported exception thrown!
+java.lang.OutOfMemoryError: Java heap space
+	at java.base/java.util.Arrays.copyOf(Arrays.java:3537)

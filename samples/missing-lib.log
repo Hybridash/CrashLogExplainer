@@ -1,0 +1,3 @@
+[main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+java.lang.NoClassDefFoundError: me/shedaniel/clothconfig2/api/ConfigBuilder
+	at com.example.betterhud.config.Screen.build(Screen.java:20)

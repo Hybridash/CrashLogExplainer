@@ -1,0 +1,11 @@
+[14:02:11] [main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[14:02:11] [main/ERROR]: Incompatible mods found!
+net.fabricmc.loader.impl.FormattedException: Some of your mods are incompatible with the game or each other!
+A potential solution has been determined, this may resolve your problem:
+	 - Install fabric-api, any version.
+	 - Replace mod 'Sodium' (sodium) 0.5.3+mc1.21.1 with version 0.6.0 or later.
+More details:
+	 - Mod 'Sodium Extra' (sodium-extra) 0.6.0+mc1.21.1 requires any version of fabric-api, which is missing!
+	 - Mod 'Iris' (iris) 1.8.1+mc1.21.1 requires version 0.6.0 or later of mod 'Sodium' (sodium), but only the wrong version is present: 0.5.3+mc1.21.1!
+	 - Mod 'Old Thing' (oldthing) 2.0 requires version 1.20.1 of mod 'Minecraft' (minecraft), but only the wrong version is present: 1.21.1!
+	at net.fabricmc.loader.impl.FormattedException.ofLocalized(FormattedException.java:51)

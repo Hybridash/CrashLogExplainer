@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crash Log Explainer</title>
+  <meta name="description" content="Paste a Minecraft crash log and get a plain-English explanation of what broke and how to fix it.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23d9534f'/><rect x='3' y='3' width='4' height='4' fill='%23222'/><rect x='9' y='3' width='4' height='4' fill='%23222'/><rect x='5' y='9' width='6' height='2' fill='%23222'/><rect x='3' y='11' width='2' height='2' fill='%23222'/><rect x='11' y='11' width='2' height='2' fill='%23222'/></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1><span class="block" aria-hidden="true"></span>Crash Log Explainer</h1>
+      <p class="lede">Minecraft crashed? Paste the crash log below and get a plain-English answer: what broke, which mod did it, and how to fix it.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="input-card" id="drop">
+      <label for="log" class="label">Your crash log</label>
+      <textarea id="log" spellcheck="false" placeholder="Paste your crash report or latest.log here, or drop the file onto this box.&#10;&#10;Where to find it:&#10;  Prism Launcher: right-click the instance → Folder → crash-reports (or logs/latest.log)&#10;  Vanilla launcher: %appdata%\.minecraft\crash-reports"></textarea>
+      <div class="actions">
+        <button id="go" class="primary">Explain it</button>
+        <label class="secondary file">
+          Open file…
+          <input id="file" type="file" accept=".log,.txt,text/plain">
+        </label>
+        <span class="break"></span>
+        <span class="muted">Try an example:</span>
+        <button class="chip" data-sample="missing-fabric-api.log">Missing mod</button>
+        <button class="chip" data-sample="java-version.log">Wrong Java</button>
+        <button class="chip" data-sample="ticking-entity.txt">World crash</button>
+        <button class="chip" data-sample="out-of-memory.log">Out of RAM</button>
+      </div>
+      <p class="privacy">Your log never leaves your computer. Everything runs in this page.</p>
+    </section>
+
+    <section id="results" hidden>
+      <div id="info" class="info"></div>
+      <div id="findings"></div>
+    </section>
+
+    <section class="help">
+      <h2>Tips that fix most crashes</h2>
+      <ol>
+        <li><strong>Update everything.</strong> Most crashes are a mod made for a slightly different version.</li>
+        <li><strong>Check the dependencies.</strong> Lots of mods need Fabric API, Cloth Config, or another library mod.</li>
+        <li><strong>Use the right Java.</strong> Minecraft 1.20.5+ needs Java 21. 1.18 to 1.20.4 need Java 17.</li>
+        <li><strong>Split the mods folder in half.</strong> If you can't find the bad mod, remove half and test. Keep halving until you find it.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    Made by <a href="https://github.com/Hybridash">Hybridash</a> · <a href="https://github.com/Hybridash/CrashLogExplainer">Source</a> · Missing a crash type? <a href="https://github.com/Hybridash/CrashLogExplainer/issues/new">Send the log</a>
+  </footer>
+
+  <script src="src/analyzer.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

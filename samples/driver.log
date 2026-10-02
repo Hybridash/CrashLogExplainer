@@ -1,0 +1,4 @@
+[main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[Render thread/ERROR]: GLFW error during init: [0x10007]65543: WGL: The driver does not appear to support OpenGL
+#  C  [atio6axx.dll+0x1a2b3c]
+Process exited with code -1073741819

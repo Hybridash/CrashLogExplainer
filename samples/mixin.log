@@ -1,0 +1,2 @@
+[main/INFO]: Loading Minecraft 1.21.1 with Fabric Loader 0.16.14
+[main/ERROR]: Mixin apply for mod fancymenu failed fancymenu.mixins.json:MixinTitleScreen from mod fancymenu -> net.minecraft.class_442: org.spongepowered.asm.mixin.injection.throwables.InvalidInjectionException Critical injection failure
